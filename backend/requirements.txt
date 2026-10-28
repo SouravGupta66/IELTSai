@@ -1,0 +1,15 @@
+# backend/requirements.txt
+
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+sqlalchemy==2.0.25
+psycopg2-binary==2.9.9  # PostgreSQL driver
+pydantic[email]==2.5.3
+pydantic-settings==2.1.0
+python-multipart==0.0.6  # For file uploads
+requests==2.31.0  # For Ollama API calls
+python-jose[cryptography]==3.3.0  # For JWT auth (future)
+passlib[bcrypt]==1.7.4  # For password hashing (future)
+bcrypt==4.0.1  # passlib 1.7.4 misdetects bcrypt>=4.1/5.x version, pin to compatible release
+piper-tts==1.6.0  # Local text-to-speech for Listening audio
+faster-whisper==1.2.1  # Local speech-to-text for Speaking transcription
